@@ -1,0 +1,15 @@
+version: 0.0
+os: windows
+files:
+  - source: \
+    destination: c:\ConsoleApp
+hooks:
+  BeforeInstall:
+    - location: app-stop.cmd
+      timeout: 30
+      runas: administrator
+  AfterInstall:
+  ApplicationStart:
+    - location: app-start.cmd
+      timeout: 30
+      runas: administrator
