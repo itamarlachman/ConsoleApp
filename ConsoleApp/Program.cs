@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Configuration;
+using System.Diagnostics;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
@@ -12,7 +10,7 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Console App Started.");
-            Thread.Sleep(5000);
+            Process.Start(ConfigurationManager.AppSettings["app"]);
             Environment.Exit(0);
         }
     }
