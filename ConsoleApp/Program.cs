@@ -12,7 +12,7 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Console App Started.");
-            Thread.Sleep(3000);
+            Thread.Sleep(5000);
             Environment.Exit(0);
         }
     }
