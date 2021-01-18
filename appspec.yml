@@ -11,5 +11,5 @@ hooks:
   AfterInstall:
   ApplicationStart:
     - location: app-start.cmd
-      timeout: 30
+      timeout: 90
       runas: administrator
