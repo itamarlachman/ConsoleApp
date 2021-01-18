@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleApp
@@ -10,7 +11,9 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Console App.");
+            Console.WriteLine("Console App Started.");
+            Thread.Sleep(3000);
+            Environment.Exit(0);
         }
     }
 }
