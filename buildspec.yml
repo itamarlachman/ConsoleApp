@@ -10,7 +10,4 @@ phases:
      - msbuild
 artifacts:
   files:
-    - 'ConsoleApp/bin/Debug/*'
-    - 'appspec.yml'
-    - 'app-stop.cmd'
-    - 'app-start.cmd'
+    - '**/*'
